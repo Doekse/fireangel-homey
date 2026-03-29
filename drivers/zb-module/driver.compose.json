@@ -42,8 +42,7 @@
     }
   },
   "platforms": [
-    "local",
-    "cloud"
+    "local"
   ],
   "connectivity": [
     "zigbee"

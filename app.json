@@ -7,8 +7,7 @@
   "brandColor": "#f16e20",
   "runtime": "nodejs",
   "platforms": [
-    "local",
-    "cloud"
+    "local"
   ],
   "name": {
     "en": "FireAngel",
@@ -53,6 +52,17 @@
     "name": "Abe Haverkamp",
     "email": "abe.haverkamp@gmail.com"
   },
+  "bugs": {
+    "url": "https://github.com/Doekse/fireangel-homey/issues"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Bas van der Ploeg (icons)"
+      }
+    ]
+  },
+  "source": "https://github.com/Doekse/fireangel-homey",
   "flow": {
     "triggers": [
       {
@@ -347,19 +357,19 @@
           "ar": "انتهى الاختبار الذاتي للإنذار"
         },
         "hint": {
-          "en": "When the device reports that self-test is no longer active (idle / normal operation).",
-          "nl": "Wanneer het apparaat meldt dat de zelftest niet meer actief is (normale werking).",
-          "de": "Wenn das Gerät meldet, dass der Selbsttest nicht mehr aktiv ist (Leerlauf / Normalbetrieb).",
-          "fr": "Lorsque l'appareil signale que l'autotest n'est plus actif (repos / fonctionnement normal).",
-          "it": "Quando il dispositivo segnala che l'autotest non è più attivo (inattivo / funzionamento normale).",
-          "sv": "När enheten rapporterar att självtest inte längre är aktivt (vila / normal drift).",
-          "no": "Når enheten rapporterer at selvtest ikke lenger er aktiv (hvile / normal drift).",
-          "es": "Cuando el dispositivo informa de que la autoprueba ya no está activa (reposo / funcionamiento normal).",
-          "da": "Når enheden rapporterer, at selvtest ikke længere er aktiv (hvile / normal drift).",
-          "ru": "Когда устройство сообщает, что самодиагностика неактивна (покой / нормальная работа).",
-          "pl": "Gdy urządzenie zgłasza, że autotest nie jest już aktywny (spoczynek / normalna praca).",
-          "ko": "기기가 자가 진단이 더 이상 활성화되지 않았다고 보고할 때(유휴 / 정상 동작).",
-          "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي لم يعد نشطًا (خامل / تشغيل عادي)."
+          "en": "When the device reports that self-test is no longer active.",
+          "nl": "Wanneer het apparaat meldt dat de zelftest niet meer actief is.",
+          "de": "Wenn das Gerät meldet, dass der Selbsttest nicht mehr aktiv ist.",
+          "fr": "Lorsque l'appareil signale que l'autotest n'est plus actif.",
+          "it": "Quando il dispositivo segnala che l'autotest non è più attivo.",
+          "sv": "När enheten rapporterar att självtest inte längre är aktivt.",
+          "no": "Når enheten rapporterer at selvtest ikke lenger er aktiv.",
+          "es": "Cuando el dispositivo informa de que la autoprueba ya no está activa.",
+          "da": "Når enheden rapporterer, at selvtest ikke længere er aktiv.",
+          "ru": "Когда устройство сообщает, что самодиагностика неактивна.",
+          "pl": "Gdy urządzenie zgłasza, że autotest nie jest już aktywny.",
+          "ko": "기기가 자가 진단이 더 이상 활성화되지 않았다고 보고할 때.",
+          "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي لم يعد نشطًا."
         },
         "args": [
           {
@@ -402,19 +412,19 @@
           "ar": "بدأ الاختبار الذاتي للإنذار"
         },
         "hint": {
-          "en": "When the device reports that a self-test is active (test button or test mode).",
-          "nl": "Wanneer het apparaat meldt dat een zelftest actief is (testknop of testmodus).",
-          "de": "Wenn das Gerät meldet, dass ein Selbsttest aktiv ist (Testtaste oder Testmodus).",
-          "fr": "Lorsque l'appareil signale qu'un autotest est actif (bouton test ou mode test).",
-          "it": "Quando il dispositivo segnala che un autotest è attivo (pulsante test o modalità test).",
-          "sv": "När enheten rapporterar att ett självtest är aktivt (testknapp eller testläge).",
-          "no": "Når enheten rapporterer at en selvtest er aktiv (testknapp eller testmodus).",
-          "es": "Cuando el dispositivo informa de que hay una autoprueba activa (botón de prueba o modo prueba).",
-          "da": "Når enheden rapporterer, at en selvtest er aktiv (testknap eller testtilstand).",
-          "ru": "Когда устройство сообщает, что активна самодиагностика (кнопка теста или тестовый режим).",
-          "pl": "Gdy urządzenie zgłasza aktywny autotest (przycisk testu lub tryb testowy).",
-          "ko": "기기가 자가 진단이 활성화되었다고 보고할 때(테스트 버튼 또는 테스트 모드).",
-          "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي نشط (زر الاختبار أو وضع الاختبار)."
+          "en": "When the device reports that a self-test is active.",
+          "nl": "Wanneer het apparaat meldt dat een zelftest actief is.",
+          "de": "Wenn das Gerät meldet, dass ein Selbsttest aktiv ist.",
+          "fr": "Lorsque l'appareil signale qu'un autotest est actif.",
+          "it": "Quando il dispositivo segnala che un autotest è attivo.",
+          "sv": "När enheten rapporterar att ett självtest är aktivt.",
+          "no": "Når enheten rapporterer at en selvtest er aktiv.",
+          "es": "Cuando el dispositivo informa de que hay una autoprueba activa.",
+          "da": "Når enheden rapporterer, at en selvtest er aktiv.",
+          "ru": "Когда устройство сообщает, что активна самодиагностика.",
+          "pl": "Gdy urządzenie zgłasza aktywny autotest.",
+          "ko": "기기가 자가 진단이 활성화되었다고 보고할 때.",
+          "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي نشط."
         },
         "args": [
           {
@@ -654,8 +664,7 @@
         }
       },
       "platforms": [
-        "local",
-        "cloud"
+        "local"
       ],
       "connectivity": [
         "zigbee"
@@ -753,8 +762,7 @@
         }
       },
       "platforms": [
-        "local",
-        "cloud"
+        "local"
       ],
       "connectivity": [
         "zwave"
@@ -866,8 +874,7 @@
         }
       },
       "platforms": [
-        "local",
-        "cloud"
+        "local"
       ],
       "connectivity": [
         "zwave"

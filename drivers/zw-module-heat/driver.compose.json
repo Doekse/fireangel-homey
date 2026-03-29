@@ -45,8 +45,7 @@
     }
   },
   "platforms": [
-    "local",
-    "cloud"
+    "local"
   ],
   "connectivity": [
     "zwave"

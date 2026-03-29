@@ -6,8 +6,7 @@
   "brandColor": "#f16e20",
   "runtime": "nodejs",
   "platforms": [
-    "local",
-    "cloud"
+    "local"
   ],
   "name": {
     "en": "FireAngel",
