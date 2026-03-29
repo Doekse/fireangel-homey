@@ -61,5 +61,6 @@
       }
     ]
   },
-  "source": "https://github.com/Doekse/fireangel-homey"
+  "source": "https://github.com/Doekse/fireangel-homey",
+  "homeyCommunityTopicId": 153100
 }
