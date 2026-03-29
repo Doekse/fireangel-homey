@@ -1,0 +1,1 @@
+Wyobraź sobie dom, w którym ochrona spoczywa cicho w tle, obecna lecz nigdy przesadna. Od dekad FireAngel z Wielkiej Brytanii współpracuje ze specjalistami pożarnictwa i rodzinami, by zapewnić niezawodną detekcję dymu, ciepła i tlenku węgla. Przez Homey ta sama czujność trafia do Flows i powiadomień w jednym znanym miejscu.

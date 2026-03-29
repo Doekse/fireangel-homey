@@ -1,0 +1,1 @@
+Picture a home where protection rests quietly in the background, present but never dramatic. For decades, FireAngel has worked from the United Kingdom with fire professionals and families to deliver dependable smoke, heat, and carbon monoxide sensing. Through Homey, that same vigilance reaches your Flows and notifications in one familiar place.

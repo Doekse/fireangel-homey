@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Cleaning is no longer required",
+    "nl": "Schoonmaken is niet meer nodig",
+    "de": "Reinigung ist nicht mehr erforderlich",
+    "fr": "Le nettoyage n'est plus requis",
+    "it": "La pulizia non è più richiesta",
+    "sv": "Rengöring krävs inte längre",
+    "no": "Rengjøring er ikke lenger nødvendig",
+    "es": "Ya no es necesaria la limpieza",
+    "da": "Rengøring er ikke længere påkrævet",
+    "ru": "Очистка больше не требуется",
+    "pl": "Czyszczenie nie jest już wymagane",
+    "ko": "더 이상 청소가 필요하지 않음",
+    "ar": "لم يعد التنظيف مطلوبًا"
+  },
+  "hint": {
+    "en": "When the device no longer reports that cleaning is needed.",
+    "nl": "Wanneer het apparaat niet meer meldt dat schoonmaken nodig is.",
+    "de": "Wenn das Gerät nicht mehr meldet, dass eine Reinigung erforderlich ist.",
+    "fr": "Lorsque l'appareil ne signale plus qu'un nettoyage est nécessaire.",
+    "it": "Quando il dispositivo non segnala più che è necessaria la pulizia.",
+    "sv": "När enheten inte längre rapporterar att rengöring behövs.",
+    "no": "Når enheten ikke lenger rapporterer at rengjøring er nødvendig.",
+    "es": "Cuando el dispositivo ya no informa de que es necesaria la limpieza.",
+    "da": "Når enheden ikke længere rapporterer, at rengøring er nødvendig.",
+    "ru": "Когда устройство больше не сообщает о необходимости очистки.",
+    "pl": "Gdy urządzenie nie zgłasza już potrzeby czyszczenia.",
+    "ko": "기기가 더 이상 청소가 필요하다고 보고하지 않을 때.",
+    "ar": "عندما يتوقف الجهاز عن الإبلاغ عن حاجة التنظيف."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+Immaginate una casa in cui la protezione resta discreta sullo sfondo, presente ma mai teatrale. Da decenni FireAngel lavora dal Regno Unito con operatori antincendio e famiglie per offrire rilevazione affidabile di fumo, calore e monossido di carbono. Tramite Homey, la stessa vigilanza arriva ai vostri Flows e alle notifiche in un luogo familiare.

@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Inspection is no longer required",
+    "nl": "Inspectie is niet meer nodig",
+    "de": "Inspektion ist nicht mehr erforderlich",
+    "fr": "L'inspection n'est plus requise",
+    "it": "L'ispezione non è più richiesta",
+    "sv": "Inspektion krävs inte längre",
+    "no": "Inspeksjon er ikke lenger nødvendig",
+    "es": "Ya no es necesaria la inspección",
+    "da": "Inspektion er ikke længere påkrævet",
+    "ru": "Осмотр больше не требуется",
+    "pl": "Inspekcja nie jest już wymagana",
+    "ko": "더 이상 점검이 필요하지 않음",
+    "ar": "لم يعد الفحص مطلوبًا"
+  },
+  "hint": {
+    "en": "When the device no longer reports that maintenance inspection is needed.",
+    "nl": "Wanneer het apparaat niet meer meldt dat een onderhoudsinspectie nodig is.",
+    "de": "Wenn das Gerät nicht mehr meldet, dass eine Wartungsinspektion erforderlich ist.",
+    "fr": "Lorsque l'appareil ne signale plus qu'une inspection d'entretien est nécessaire.",
+    "it": "Quando il dispositivo non segnala più che è necessaria l'ispezione di manutenzione.",
+    "sv": "När enheten inte längre rapporterar att underhållsinspektion behövs.",
+    "no": "Når enheten ikke lenger rapporterer at vedlikeholdsinspeksjon er nødvendig.",
+    "es": "Cuando el dispositivo ya no informa de que es necesaria la inspección de mantenimiento.",
+    "da": "Når enheden ikke længere rapporterer, at vedligeholdelsesinspektion er nødvendig.",
+    "ru": "Когда устройство больше не сообщает о необходимости техосмотра.",
+    "pl": "Gdy urządzenie nie zgłasza już potrzeby przeglądu konserwacyjnego.",
+    "ko": "기기가 더 이상 유지보수 점검이 필요하다고 보고하지 않을 때.",
+    "ar": "عندما يتوقف الجهاز عن الإبلاغ عن حاجة فحص الصيانة."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

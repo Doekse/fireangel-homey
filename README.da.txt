@@ -1,0 +1,1 @@
+Forestil dig et hjem, hvor beskyttelsen hviler stille i baggrunden, til stede men aldrig dramatisk. I årtier har FireAngel fra Storbritannien arbejdet med brandfagfolk og familier for at levere pålidelig røg-, varme- og kulilodetektion. Gennem Homey når den samme årvågenhed dine Flows og notifikationer ét velkendt sted.

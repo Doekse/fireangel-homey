@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Device reaches its end of life",
+    "nl": "Apparaat bereikt einde levensduur",
+    "de": "Gerät erreicht Lebensende",
+    "fr": "L'appareil atteint sa fin de vie",
+    "it": "Il dispositivo raggiunge la fine utile",
+    "sv": "Enheten når livets slut",
+    "no": "Enheten når slutten av levetiden",
+    "es": "El dispositivo alcanza el fin de su vida útil",
+    "da": "Enheden når enden af levetiden",
+    "ru": "Устройство достигло конца срока службы",
+    "pl": "Urządzenie osiąga koniec żywotności",
+    "ko": "기기가 수명 종료에 도달함",
+    "ar": "الجهاز يبلغ نهاية عمره الافتراضي"
+  },
+  "hint": {
+    "en": "When the device reports that it should be replaced.",
+    "nl": "Wanneer het apparaat meldt dat het vervangen moet worden.",
+    "de": "Wenn das Gerät meldet, dass es ersetzt werden sollte.",
+    "fr": "Lorsque l'appareil signale qu'il doit être remplacé.",
+    "it": "Quando il dispositivo segnala che deve essere sostituito.",
+    "sv": "När enheten rapporterar att den ska bytas.",
+    "no": "Når enheten rapporterer at den skal byttes.",
+    "es": "Cuando el dispositivo informa de que debe sustituirse.",
+    "da": "Når enheden rapporterer, at den skal udskiftes.",
+    "ru": "Когда устройство сообщает, что его следует заменить.",
+    "pl": "Gdy urządzenie zgłasza, że należy je wymienić.",
+    "ko": "기기가 교체해야 한다고 보고할 때.",
+    "ar": "عندما يبلغ الجهاز أنه يجب استبداله."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

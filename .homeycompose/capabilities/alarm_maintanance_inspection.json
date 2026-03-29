@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "icon": "/assets/capabilities/alarm_maintanance_inspection.svg",
+  "title": {
+    "en": "Inspection Required",
+    "nl": "Inspectie vereist",
+    "de": "Inspektion erforderlich",
+    "fr": "Inspection requise",
+    "it": "Ispezione richiesta",
+    "sv": "Inspektion krävs",
+    "no": "Inspeksjon påkrevd",
+    "es": "Inspección necesaria",
+    "da": "Inspektion påkrævet",
+    "ru": "Требуется осмотр",
+    "pl": "Wymagana inspekcja",
+    "ko": "점검 필요",
+    "ar": "الفحص مطلوب"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor"
+}

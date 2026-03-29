@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Inspection is required",
+    "nl": "Inspectie is vereist",
+    "de": "Inspektion ist erforderlich",
+    "fr": "L'inspection est requise",
+    "it": "L'ispezione è richiesta",
+    "sv": "Inspektion krävs",
+    "no": "Inspeksjon er nødvendig",
+    "es": "Es necesaria la inspección",
+    "da": "Inspektion er påkrævet",
+    "ru": "Требуется осмотр",
+    "pl": "Wymagana jest inspekcja",
+    "ko": "점검이 필요함",
+    "ar": "الفحص مطلوب"
+  },
+  "hint": {
+    "en": "When the device reports that maintenance inspection is needed.",
+    "nl": "Wanneer het apparaat meldt dat een onderhoudsinspectie nodig is.",
+    "de": "Wenn das Gerät meldet, dass eine Wartungsinspektion erforderlich ist.",
+    "fr": "Lorsque l'appareil signale qu'une inspection d'entretien est nécessaire.",
+    "it": "Quando il dispositivo segnala che è necessaria l'ispezione di manutenzione.",
+    "sv": "När enheten rapporterar att underhållsinspektion behövs.",
+    "no": "Når enheten rapporterer at vedlikeholdsinspeksjon er nødvendig.",
+    "es": "Cuando el dispositivo informa de que es necesaria la inspección de mantenimiento.",
+    "da": "Når enheden rapporterer, at vedligeholdelsesinspektion er nødvendig.",
+    "ru": "Когда устройство сообщает о необходимости техосмотра.",
+    "pl": "Gdy urządzenie zgłasza potrzebę przeglądu konserwacyjnego.",
+    "ko": "기기가 유지보수 점검이 필요하다고 보고할 때.",
+    "ar": "عندما يبلغ الجهاز أن فحص الصيانة مطلوب."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

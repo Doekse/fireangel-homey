@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Cleaning !{{is|is not}} required",
+    "nl": "Schoonmaken !{{is|is niet}} vereist",
+    "de": "Reinigung !{{ist|ist nicht}} erforderlich",
+    "fr": "Nettoyage !{{est|n'est pas}} requis",
+    "it": "Pulizia !{{è|non è}} richiesta",
+    "sv": "Rengöring !{{är|är inte}} nödvändig",
+    "no": "Rengjøring !{{er|er ikke}} påkrevd",
+    "es": "Limpieza !{{es|no es}} necesaria",
+    "da": "Rengøring !{{er|er ikke}} påkrævet",
+    "ru": "Очистка !{{требуется|не требуется}}",
+    "pl": "Czyszczenie !{{jest|nie jest}} wymagane",
+    "ko": "청소가 !{{필요합니다|필요하지 않습니다}}",
+    "ar": "التنظيف !{{مطلوب|غير مطلوب}}"
+  },
+  "hint": {
+    "en": "Checks whether cleaning is currently required for the device.",
+    "nl": "Controleert of er momenteel schoonmaken nodig is voor het apparaat.",
+    "de": "Prüft, ob für das Gerät derzeit eine Reinigung erforderlich ist.",
+    "fr": "Vérifie si un nettoyage est actuellement requis pour l'appareil.",
+    "it": "Verifica se è attualmente richiesta la pulizia per il dispositivo.",
+    "sv": "Kontrollerar om rengöring för närvarande krävs för enheten.",
+    "no": "Sjekker om rengjøring for øyeblikket er nødvendig for enheten.",
+    "es": "Comprueba si la limpieza es necesaria actualmente para el dispositivo.",
+    "da": "Tjekker om rengøring i øjeblikket er påkrævet for enheden.",
+    "ru": "Проверяет, требуется ли сейчас очистка устройства.",
+    "pl": "Sprawdza, czy urządzenie wymaga obecnie czyszczenia.",
+    "ko": "기기에 현재 청소가 필요한지 확인합니다.",
+    "ar": "يتحقق مما إذا كان التنظيف مطلوبًا حاليًا للجهاز."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

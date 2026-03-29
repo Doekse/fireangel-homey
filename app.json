@@ -1,0 +1,1026 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "uk.co.fireangel",
+  "version": "0.0.1",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "brandColor": "#f16e20",
+  "runtime": "nodejs",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "FireAngel",
+    "nl": "FireAngel",
+    "de": "FireAngel",
+    "fr": "FireAngel",
+    "it": "FireAngel",
+    "sv": "FireAngel",
+    "no": "FireAngel",
+    "es": "FireAngel",
+    "da": "FireAngel",
+    "ru": "FireAngel",
+    "pl": "FireAngel",
+    "ko": "FireAngel",
+    "ar": "FireAngel"
+  },
+  "description": {
+    "en": "Smart solutions for safer homes.",
+    "nl": "Slimme oplossingen voor veiligere woningen.",
+    "de": "Intelligente Lösungen für sicherere Zuhause.",
+    "fr": "Des solutions intelligentes pour des foyers plus sûrs.",
+    "it": "Soluzioni intelligenti per case più sicure.",
+    "sv": "Smarta lösningar för säkrare hem.",
+    "no": "Smarte løsninger for tryggere hjem.",
+    "es": "Soluciones inteligentes para hogares más seguros.",
+    "da": "Smarte løsninger til mere sikre hjem.",
+    "ru": "Умные решения для более безопасного дома.",
+    "pl": "Inteligentne rozwiązania dla bezpieczniejszych domów.",
+    "ko": "더 안전한 집을 위한 스마트 솔루션.",
+    "ar": "حلول ذكية لمنازل أكثر أمانًا."
+  },
+  "category": [
+    "security"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Abe Haverkamp",
+    "email": "abe.haverkamp@gmail.com"
+  },
+  "flow": {
+    "triggers": [
+      {
+        "title": {
+          "en": "Device reaches its end of life",
+          "nl": "Apparaat bereikt einde levensduur",
+          "de": "Gerät erreicht Lebensende",
+          "fr": "L'appareil atteint sa fin de vie",
+          "it": "Il dispositivo raggiunge la fine utile",
+          "sv": "Enheten når livets slut",
+          "no": "Enheten når slutten av levetiden",
+          "es": "El dispositivo alcanza el fin de su vida útil",
+          "da": "Enheden når enden af levetiden",
+          "ru": "Устройство достигло конца срока службы",
+          "pl": "Urządzenie osiąga koniec żywotności",
+          "ko": "기기가 수명 종료에 도달함",
+          "ar": "الجهاز يبلغ نهاية عمره الافتراضي"
+        },
+        "hint": {
+          "en": "When the device reports that it should be replaced.",
+          "nl": "Wanneer het apparaat meldt dat het vervangen moet worden.",
+          "de": "Wenn das Gerät meldet, dass es ersetzt werden sollte.",
+          "fr": "Lorsque l'appareil signale qu'il doit être remplacé.",
+          "it": "Quando il dispositivo segnala che deve essere sostituito.",
+          "sv": "När enheten rapporterar att den ska bytas.",
+          "no": "Når enheten rapporterer at den skal byttes.",
+          "es": "Cuando el dispositivo informa de que debe sustituirse.",
+          "da": "Når enheden rapporterer, at den skal udskiftes.",
+          "ru": "Когда устройство сообщает, что его следует заменить.",
+          "pl": "Gdy urządzenie zgłasza, że należy je wymienić.",
+          "ko": "기기가 교체해야 한다고 보고할 때.",
+          "ar": "عندما يبلغ الجهاز أنه يجب استبداله."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_eol_true"
+      },
+      {
+        "title": {
+          "en": "Cleaning is no longer required",
+          "nl": "Schoonmaken is niet meer nodig",
+          "de": "Reinigung ist nicht mehr erforderlich",
+          "fr": "Le nettoyage n'est plus requis",
+          "it": "La pulizia non è più richiesta",
+          "sv": "Rengöring krävs inte längre",
+          "no": "Rengjøring er ikke lenger nødvendig",
+          "es": "Ya no es necesaria la limpieza",
+          "da": "Rengøring er ikke længere påkrævet",
+          "ru": "Очистка больше не требуется",
+          "pl": "Czyszczenie nie jest już wymagane",
+          "ko": "더 이상 청소가 필요하지 않음",
+          "ar": "لم يعد التنظيف مطلوبًا"
+        },
+        "hint": {
+          "en": "When the device no longer reports that cleaning is needed.",
+          "nl": "Wanneer het apparaat niet meer meldt dat schoonmaken nodig is.",
+          "de": "Wenn das Gerät nicht mehr meldet, dass eine Reinigung erforderlich ist.",
+          "fr": "Lorsque l'appareil ne signale plus qu'un nettoyage est nécessaire.",
+          "it": "Quando il dispositivo non segnala più che è necessaria la pulizia.",
+          "sv": "När enheten inte längre rapporterar att rengöring behövs.",
+          "no": "Når enheten ikke lenger rapporterer at rengjøring er nødvendig.",
+          "es": "Cuando el dispositivo ya no informa de que es necesaria la limpieza.",
+          "da": "Når enheden ikke længere rapporterer, at rengøring er nødvendig.",
+          "ru": "Когда устройство больше не сообщает о необходимости очистки.",
+          "pl": "Gdy urządzenie nie zgłasza już potrzeby czyszczenia.",
+          "ko": "기기가 더 이상 청소가 필요하다고 보고하지 않을 때.",
+          "ar": "عندما يتوقف الجهاز عن الإبلاغ عن حاجة التنظيف."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_maintanance_dust_false"
+      },
+      {
+        "title": {
+          "en": "Cleaning is required",
+          "nl": "Schoonmaken is vereist",
+          "de": "Reinigung ist erforderlich",
+          "fr": "Le nettoyage est requis",
+          "it": "La pulizia è richiesta",
+          "sv": "Rengöring krävs",
+          "no": "Rengjøring er nødvendig",
+          "es": "Es necesaria la limpieza",
+          "da": "Rengøring er påkrævet",
+          "ru": "Требуется очистка",
+          "pl": "Wymagane jest czyszczenie",
+          "ko": "청소가 필요함",
+          "ar": "التنظيف مطلوب"
+        },
+        "hint": {
+          "en": "When the device reports that cleaning is needed.",
+          "nl": "Wanneer het apparaat meldt dat schoonmaken nodig is.",
+          "de": "Wenn das Gerät meldet, dass eine Reinigung erforderlich ist.",
+          "fr": "Lorsque l'appareil signale qu'un nettoyage est nécessaire.",
+          "it": "Quando il dispositivo segnala che è necessaria la pulizia.",
+          "sv": "När enheten rapporterar att rengöring behövs.",
+          "no": "Når enheten rapporterer at rengjøring er nødvendig.",
+          "es": "Cuando el dispositivo informa de que es necesaria la limpieza.",
+          "da": "Når enheden rapporterer, at rengøring er nødvendig.",
+          "ru": "Когда устройство сообщает о необходимости очистки.",
+          "pl": "Gdy urządzenie zgłasza potrzebę czyszczenia.",
+          "ko": "기기가 청소가 필요하다고 보고할 때.",
+          "ar": "عندما يبلغ الجهاز أن التنظيف مطلوب."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_maintanance_dust_true"
+      },
+      {
+        "title": {
+          "en": "Inspection is no longer required",
+          "nl": "Inspectie is niet meer nodig",
+          "de": "Inspektion ist nicht mehr erforderlich",
+          "fr": "L'inspection n'est plus requise",
+          "it": "L'ispezione non è più richiesta",
+          "sv": "Inspektion krävs inte längre",
+          "no": "Inspeksjon er ikke lenger nødvendig",
+          "es": "Ya no es necesaria la inspección",
+          "da": "Inspektion er ikke længere påkrævet",
+          "ru": "Осмотр больше не требуется",
+          "pl": "Inspekcja nie jest już wymagana",
+          "ko": "더 이상 점검이 필요하지 않음",
+          "ar": "لم يعد الفحص مطلوبًا"
+        },
+        "hint": {
+          "en": "When the device no longer reports that maintenance inspection is needed.",
+          "nl": "Wanneer het apparaat niet meer meldt dat een onderhoudsinspectie nodig is.",
+          "de": "Wenn das Gerät nicht mehr meldet, dass eine Wartungsinspektion erforderlich ist.",
+          "fr": "Lorsque l'appareil ne signale plus qu'une inspection d'entretien est nécessaire.",
+          "it": "Quando il dispositivo non segnala più che è necessaria l'ispezione di manutenzione.",
+          "sv": "När enheten inte längre rapporterar att underhållsinspektion behövs.",
+          "no": "Når enheten ikke lenger rapporterer at vedlikeholdsinspeksjon er nødvendig.",
+          "es": "Cuando el dispositivo ya no informa de que es necesaria la inspección de mantenimiento.",
+          "da": "Når enheden ikke længere rapporterer, at vedligeholdelsesinspektion er nødvendig.",
+          "ru": "Когда устройство больше не сообщает о необходимости техосмотра.",
+          "pl": "Gdy urządzenie nie zgłasza już potrzeby przeglądu konserwacyjnego.",
+          "ko": "기기가 더 이상 유지보수 점검이 필요하다고 보고하지 않을 때.",
+          "ar": "عندما يتوقف الجهاز عن الإبلاغ عن حاجة فحص الصيانة."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_maintanance_inspection_false"
+      },
+      {
+        "title": {
+          "en": "Inspection is required",
+          "nl": "Inspectie is vereist",
+          "de": "Inspektion ist erforderlich",
+          "fr": "L'inspection est requise",
+          "it": "L'ispezione è richiesta",
+          "sv": "Inspektion krävs",
+          "no": "Inspeksjon er nødvendig",
+          "es": "Es necesaria la inspección",
+          "da": "Inspektion er påkrævet",
+          "ru": "Требуется осмотр",
+          "pl": "Wymagana jest inspekcja",
+          "ko": "점검이 필요함",
+          "ar": "الفحص مطلوب"
+        },
+        "hint": {
+          "en": "When the device reports that maintenance inspection is needed.",
+          "nl": "Wanneer het apparaat meldt dat een onderhoudsinspectie nodig is.",
+          "de": "Wenn das Gerät meldet, dass eine Wartungsinspektion erforderlich ist.",
+          "fr": "Lorsque l'appareil signale qu'une inspection d'entretien est nécessaire.",
+          "it": "Quando il dispositivo segnala che è necessaria l'ispezione di manutenzione.",
+          "sv": "När enheten rapporterar att underhållsinspektion behövs.",
+          "no": "Når enheten rapporterer at vedlikeholdsinspeksjon er nødvendig.",
+          "es": "Cuando el dispositivo informa de que es necesaria la inspección de mantenimiento.",
+          "da": "Når enheden rapporterer, at vedligeholdelsesinspektion er nødvendig.",
+          "ru": "Когда устройство сообщает о необходимости техосмотра.",
+          "pl": "Gdy urządzenie zgłasza potrzebę przeglądu konserwacyjnego.",
+          "ko": "기기가 유지보수 점검이 필요하다고 보고할 때.",
+          "ar": "عندما يبلغ الجهاز أن فحص الصيانة مطلوب."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_maintanance_inspection_true"
+      },
+      {
+        "title": {
+          "en": "Alarm self-test ended",
+          "nl": "Zelftest alarm beëindigd",
+          "de": "Alarm-Selbsttest beendet",
+          "fr": "Autotest d'alarme terminé",
+          "it": "Autotest allarme terminato",
+          "sv": "Larmsjälvtest avslutat",
+          "no": "Alarmselvtest avsluttet",
+          "es": "Autoprueba de alarma finalizada",
+          "da": "Alarm-selvtest afsluttet",
+          "ru": "Самодиагностика сигнализации завершена",
+          "pl": "Autotest alarmu zakończony",
+          "ko": "경보 자가 진단 종료",
+          "ar": "انتهى الاختبار الذاتي للإنذار"
+        },
+        "hint": {
+          "en": "When the device reports that self-test is no longer active (idle / normal operation).",
+          "nl": "Wanneer het apparaat meldt dat de zelftest niet meer actief is (normale werking).",
+          "de": "Wenn das Gerät meldet, dass der Selbsttest nicht mehr aktiv ist (Leerlauf / Normalbetrieb).",
+          "fr": "Lorsque l'appareil signale que l'autotest n'est plus actif (repos / fonctionnement normal).",
+          "it": "Quando il dispositivo segnala che l'autotest non è più attivo (inattivo / funzionamento normale).",
+          "sv": "När enheten rapporterar att självtest inte längre är aktivt (vila / normal drift).",
+          "no": "Når enheten rapporterer at selvtest ikke lenger er aktiv (hvile / normal drift).",
+          "es": "Cuando el dispositivo informa de que la autoprueba ya no está activa (reposo / funcionamiento normal).",
+          "da": "Når enheden rapporterer, at selvtest ikke længere er aktiv (hvile / normal drift).",
+          "ru": "Когда устройство сообщает, что самодиагностика неактивна (покой / нормальная работа).",
+          "pl": "Gdy urządzenie zgłasza, że autotest nie jest już aktywny (spoczynek / normalna praca).",
+          "ko": "기기가 자가 진단이 더 이상 활성화되지 않았다고 보고할 때(유휴 / 정상 동작).",
+          "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي لم يعد نشطًا (خامل / تشغيل عادي)."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zb-module|zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_test_false"
+      },
+      {
+        "title": {
+          "en": "Alarm self-test started",
+          "nl": "Zelftest alarm gestart",
+          "de": "Alarm-Selbsttest gestartet",
+          "fr": "Autotest d'alarme démarré",
+          "it": "Autotest allarme avviato",
+          "sv": "Larmsjälvtest startat",
+          "no": "Alarmselvtest startet",
+          "es": "Autoprueba de alarma iniciada",
+          "da": "Alarm-selvtest startet",
+          "ru": "Запущена самодиагностика сигнализации",
+          "pl": "Rozpoczęto autotest alarmu",
+          "ko": "경보 자가 진단 시작",
+          "ar": "بدأ الاختبار الذاتي للإنذار"
+        },
+        "hint": {
+          "en": "When the device reports that a self-test is active (test button or test mode).",
+          "nl": "Wanneer het apparaat meldt dat een zelftest actief is (testknop of testmodus).",
+          "de": "Wenn das Gerät meldet, dass ein Selbsttest aktiv ist (Testtaste oder Testmodus).",
+          "fr": "Lorsque l'appareil signale qu'un autotest est actif (bouton test ou mode test).",
+          "it": "Quando il dispositivo segnala che un autotest è attivo (pulsante test o modalità test).",
+          "sv": "När enheten rapporterar att ett självtest är aktivt (testknapp eller testläge).",
+          "no": "Når enheten rapporterer at en selvtest er aktiv (testknapp eller testmodus).",
+          "es": "Cuando el dispositivo informa de que hay una autoprueba activa (botón de prueba o modo prueba).",
+          "da": "Når enheden rapporterer, at en selvtest er aktiv (testknap eller testtilstand).",
+          "ru": "Когда устройство сообщает, что активна самодиагностика (кнопка теста или тестовый режим).",
+          "pl": "Gdy urządzenie zgłasza aktywny autotest (przycisk testu lub tryb testowy).",
+          "ko": "기기가 자가 진단이 활성화되었다고 보고할 때(테스트 버튼 또는 테스트 모드).",
+          "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي نشط (زر الاختبار أو وضع الاختبار)."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zb-module|zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "alarm_test_true"
+      }
+    ],
+    "conditions": [
+      {
+        "title": {
+          "en": "Cleaning !{{is|is not}} required",
+          "nl": "Schoonmaken !{{is|is niet}} vereist",
+          "de": "Reinigung !{{ist|ist nicht}} erforderlich",
+          "fr": "Nettoyage !{{est|n'est pas}} requis",
+          "it": "Pulizia !{{è|non è}} richiesta",
+          "sv": "Rengöring !{{är|är inte}} nödvändig",
+          "no": "Rengjøring !{{er|er ikke}} påkrevd",
+          "es": "Limpieza !{{es|no es}} necesaria",
+          "da": "Rengøring !{{er|er ikke}} påkrævet",
+          "ru": "Очистка !{{требуется|не требуется}}",
+          "pl": "Czyszczenie !{{jest|nie jest}} wymagane",
+          "ko": "청소가 !{{필요합니다|필요하지 않습니다}}",
+          "ar": "التنظيف !{{مطلوب|غير مطلوب}}"
+        },
+        "hint": {
+          "en": "Checks whether cleaning is currently required for the device.",
+          "nl": "Controleert of er momenteel schoonmaken nodig is voor het apparaat.",
+          "de": "Prüft, ob für das Gerät derzeit eine Reinigung erforderlich ist.",
+          "fr": "Vérifie si un nettoyage est actuellement requis pour l'appareil.",
+          "it": "Verifica se è attualmente richiesta la pulizia per il dispositivo.",
+          "sv": "Kontrollerar om rengöring för närvarande krävs för enheten.",
+          "no": "Sjekker om rengjøring for øyeblikket er nødvendig for enheten.",
+          "es": "Comprueba si la limpieza es necesaria actualmente para el dispositivo.",
+          "da": "Tjekker om rengøring i øjeblikket er påkrævet for enheden.",
+          "ru": "Проверяет, требуется ли сейчас очистка устройства.",
+          "pl": "Sprawdza, czy urządzenie wymaga obecnie czyszczenia.",
+          "ko": "기기에 현재 청소가 필요한지 확인합니다.",
+          "ar": "يتحقق مما إذا كان التنظيف مطلوبًا حاليًا للجهاز."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "cleaning_required"
+      },
+      {
+        "title": {
+          "en": "!{{The device should be replaced|The device should not be replaced}}",
+          "nl": "!{{Het apparaat moet worden vervangen|Het apparaat hoeft niet te worden vervangen}}",
+          "de": "!{{Das Gerät sollte ersetzt werden|Das Gerät sollte nicht ersetzt werden}}",
+          "fr": "!{{L'appareil doit être remplacé|L'appareil ne doit pas être remplacé}}",
+          "it": "!{{Il dispositivo deve essere sostituito|Il dispositivo non deve essere sostituito}}",
+          "sv": "!{{Enheten ska bytas|Enheten ska inte bytas}}",
+          "no": "!{{Enheten skal byttes|Enheten skal ikke byttes}}",
+          "es": "!{{El dispositivo debe sustituirse|El dispositivo no debe sustituirse}}",
+          "da": "!{{Enheden skal udskiftes|Enheden skal ikke udskiftes}}",
+          "ru": "!{{Устройство следует заменить|Устройство не следует заменять}}",
+          "pl": "!{{Urządzenie należy wymienić|Urządzenia nie należy wymieniać}}",
+          "ko": "!{{기기를 교체해야 합니다|기기를 교체할 필요가 없습니다}}",
+          "ar": "!{{يجب استبدال الجهاز|لا يجب استبدال الجهاز}}"
+        },
+        "hint": {
+          "en": "Checks whether the device reports that it has reached end of life and should be replaced.",
+          "nl": "Controleert of het apparaat meldt dat het het einde van de levensduur heeft bereikt en vervangen moet worden.",
+          "de": "Prüft, ob das Gerät meldet, dass es das Lebensende erreicht hat und ersetzt werden sollte.",
+          "fr": "Vérifie si l'appareil signale qu'il a atteint sa fin de vie et doit être remplacé.",
+          "it": "Verifica se il dispositivo segnala di aver raggiunto la fine utile e deve essere sostituito.",
+          "sv": "Kontrollerar om enheten rapporterar att den nått livets slut och ska bytas.",
+          "no": "Sjekker om enheten rapporterer at den har nådd levetidens slutt og skal byttes.",
+          "es": "Comprueba si el dispositivo informa de que ha alcanzado el fin de su vida útil y debe sustituirse.",
+          "da": "Tjekker om enheden rapporterer, at den har nået enden af levetiden og skal udskiftes.",
+          "ru": "Проверяет, сообщает ли устройство о достижении конца срока службы и необходимости замены.",
+          "pl": "Sprawdza, czy urządzenie zgłasza koniec żywotności i konieczność wymiany.",
+          "ko": "기기가 수명 종료에 도달해 교체해야 한다고 보고하는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان الجهاز يبلغ أنه بلغ نهاية عمره الافتراضي ويجب استبداله."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "device_should_be_replaced"
+      },
+      {
+        "title": {
+          "en": "Inspection !{{is|is not}} required",
+          "nl": "Inspectie !{{is|is niet}} vereist",
+          "de": "Inspektion !{{ist|ist nicht}} erforderlich",
+          "fr": "Inspection !{{est|n'est pas}} requise",
+          "it": "Ispezione !{{è|non è}} richiesta",
+          "sv": "Inspektion !{{är|är inte}} nödvändig",
+          "no": "Inspeksjon !{{er|er ikke}} påkrevd",
+          "es": "Inspección !{{es|no es}} necesaria",
+          "da": "Inspektion !{{er|er ikke}} påkrævet",
+          "ru": "Осмотр !{{требуется|не требуется}}",
+          "pl": "Inspekcja !{{jest|nie jest}} wymagana",
+          "ko": "점검이 !{{필요합니다|필요하지 않습니다}}",
+          "ar": "الفحص !{{مطلوب|غير مطلوب}}"
+        },
+        "hint": {
+          "en": "Checks whether maintenance inspection is currently required for the device.",
+          "nl": "Controleert of er momenteel een onderhoudsinspectie nodig is voor het apparaat.",
+          "de": "Prüft, ob für das Gerät derzeit eine Wartungsinspektion erforderlich ist.",
+          "fr": "Vérifie si une inspection d'entretien est actuellement requise pour l'appareil.",
+          "it": "Verifica se è attualmente richiesta l'ispezione di manutenzione per il dispositivo.",
+          "sv": "Kontrollerar om underhållsinspektion för närvarande krävs för enheten.",
+          "no": "Sjekker om vedlikeholdsinspeksjon for øyeblikket er nødvendig for enheten.",
+          "es": "Comprueba si la inspección de mantenimiento es necesaria actualmente para el dispositivo.",
+          "da": "Tjekker om vedligeholdelsesinspektion i øjeblikket er påkrævet for enheden.",
+          "ru": "Проверяет, требуется ли сейчас техосмотр устройства.",
+          "pl": "Sprawdza, czy urządzenie wymaga obecnie przeglądu konserwacyjnego.",
+          "ko": "기기에 현재 유지보수 점검이 필요한지 확인합니다.",
+          "ar": "يتحقق مما إذا كان فحص الصيانة مطلوبًا حاليًا للجهاز."
+        },
+        "args": [
+          {
+            "type": "device",
+            "name": "device",
+            "title": {
+              "en": "Device",
+              "nl": "Apparaat",
+              "de": "Gerät",
+              "fr": "Appareil",
+              "it": "Dispositivo",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Dispositivo",
+              "da": "Enhed",
+              "ru": "Устройство",
+              "pl": "Urządzenie",
+              "ko": "기기",
+              "ar": "الجهاز"
+            },
+            "filter": "driver_id=zw-module-heat|zw-module-smoke"
+          }
+        ],
+        "id": "inspection_required"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Smoke / Heat Alarm (ZB-Module)",
+        "nl": "Rookmelder / warmtemelder (ZB-Module)",
+        "de": "Rauchmelder / Hitzemelder (ZB-Module)",
+        "fr": "Détecteur de fumée / de chaleur (ZB-Module)",
+        "it": "Rilevatore fumo / calore (ZB-Module)",
+        "sv": "Rökvarnare / värmevarnare (ZB-Module)",
+        "no": "Røykvarsel / varmevarsel (ZB-Module)",
+        "es": "Detector de humo / calor (ZB-Module)",
+        "da": "Røgalarm / varmealarm (ZB-Module)",
+        "ru": "Дымовой / тепловой извещатель (ZB-Module)",
+        "pl": "Czujnik dymu / ciepła (ZB-Module)",
+        "ko": "연기 / 열 감지기 (ZB-Module)",
+        "ar": "جهاز كشف الدخان / الحرارة (ZB-Module)"
+      },
+      "class": "smokealarm",
+      "capabilities": [
+        "alarm_fire",
+        "alarm_test",
+        "alarm_tamper",
+        "alarm_problem",
+        "alarm_battery"
+      ],
+      "capabilitiesOptions": {
+        "alarm_problem": {
+          "title": {
+            "en": "Hardware Fault",
+            "nl": "Hardwarefout",
+            "de": "Hardwarefehler",
+            "fr": "Défaut matériel",
+            "it": "Guasto hardware",
+            "sv": "Hårdvarufel",
+            "no": "Maskinvarefeil",
+            "es": "Avería de hardware",
+            "da": "Hardwarefejl",
+            "ru": "Аппаратная неисправность",
+            "pl": "Usterka sprzętu",
+            "ko": "하드웨어 결함",
+            "ar": "عطل في الأجهزة"
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      },
+      "zigbee": {
+        "manufacturerName": "Fireangel",
+        "productId": [
+          "Alarm_SD_Device"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              1,
+              1280
+            ],
+            "bindings": [
+              1280
+            ]
+          }
+        },
+        "learnmode": {
+          "instruction": {
+            "en": "First hold the reset pin on the back of the ZB-Module for more than five seconds, the LED should quickly flash 10 times.\n\nAfter that press the reset pin once to start pairing mode, the LED should flash once per second.\n\nAfter pairing please test the alarm once to fully include it.",
+            "nl": "Houd de reset-pin aan de achterkant van de ZB-module langer dan vijf seconden ingedrukt; de LED zou snel 10 keer moeten knipperen.\n\nDruk daarna één keer op de reset-pin om de koppelmodus te starten; de LED knippert één keer per seconde.\n\nTest na het koppelen de alarmmelder één keer om het apparaat volledig op te nemen.",
+            "de": "Halten Sie den Reset-Stift auf der Rückseite des ZB-Moduls länger als fünf Sekunden gedrückt; die LED sollte schnell 10-mal blinken.\n\nDrücken Sie anschließend einmal auf den Reset-Stift, um den Kopplungsmodus zu starten; die LED blinkt einmal pro Sekunde.\n\nTesten Sie nach der Kopplung den Alarm einmal, um das Gerät vollständig einzubinden.",
+            "fr": "Maintenez la broche de réinitialisation au dos du module ZB pendant plus de cinq secondes ; la LED doit clignoter rapidement 10 fois.\n\nEnsuite, appuyez une fois sur la broche de réinitialisation pour démarrer le mode jumelage ; la LED clignote une fois par seconde.\n\nAprès le jumelage, testez l'alarme une fois pour finaliser l'inclusion.",
+            "it": "Tenere premuto il pin di reset sul retro del modulo ZB per più di cinque secondi; il LED dovrebbe lampeggiare rapidamente 10 volte.\n\nPoi premere una volta il pin di reset per avviare la modalità di associazione; il LED lampeggia una volta al secondo.\n\nDopo l'associazione, testare l'allarme una volta per completare l'inclusione.",
+            "sv": "Håll resetstiftet på baksidan av ZB-modulen intryckt i mer än fem sekunder; LED-lampan ska blinka snabbt 10 gånger.\n\nTryck sedan en gång på resetstiftet för att starta parkopplingsläget; LED blinkar en gång per sekund.\n\nEfter parkoppling, testa larmet en gång för att fullt inkludera enheten.",
+            "no": "Hold tilbakestiftet på baksiden av ZB-modulen inne i mer enn fem sekunder; LED-en skal blinke raskt 10 ganger.\n\nTrykk deretter én gang på tilbakestiftet for å starte parkoblingsmodus; LED-en blinker én gang per sekund.\n\nEtter parkobling, test alarmen én gang for å fullføre inkluderingen.",
+            "es": "Mantenga pulsado el pin de reinicio en la parte posterior del módulo ZB durante más de cinco segundos; el LED debería parpadear rápidamente 10 veces.\n\nA continuación, pulse una vez el pin de reinicio para iniciar el modo de emparejamiento; el LED parpadea una vez por segundo.\n\nDespués del emparejamiento, pruebe la alarma una vez para completar la inclusión.",
+            "da": "Hold nulstillingsstiften på bagsiden af ZB-modulet inde i mere end fem sekunder; LED'en skal hurtigt blinke 10 gange.\n\nTryk derefter én gang på nulstillingsstiften for at starte parringstilstand; LED'en blinker én gang per sekund.\n\nEfter parring, test alarmen én gang for fuldt at inkludere enheden.",
+            "ru": "Удерживайте контакт сброса на задней стороне модуля ZB более пяти секунд; индикатор должен быстро мигнуть 10 раз.\n\nЗатем один раз нажмите на контакт сброса, чтобы войти в режим сопряжения; индикатор мигает раз в секунду.\n\nПосле сопряжения один раз протестируйте сигнализацию для полного включения устройства.",
+            "pl": "Przytrzymaj pin resetu z tyłu modułu ZB dłużej niż pięć sekund; dioda LED powinna szybko mignąć 10 razy.\n\nNastępnie naciśnij pin resetu raz, aby uruchomić tryb parowania; dioda miga raz na sekundę.\n\nPo sparowaniu przetestuj alarm raz, aby w pełni dodać urządzenie.",
+            "ko": "ZB 모듈 뒷면의 리셋 핀을 5초 이상 길게 누르세요. LED가 빠르게 10번 깜박여야 합니다.\n\n그 다음 페어링 모드를 시작하려면 리셋 핀을 한 번 누르세요. LED가 초당 한 번 깜박입니다.\n\n페어링 후 알람을 한 번 테스트하여 기기를 완전히 포함하세요.",
+            "ar": "اضغط مع الاستمرار على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZB لأكثر من خمس ثوانٍ؛ يجب أن يومض مصباح LED بسرعة 10 مرات.\n\nبعد ذلك اضغط مرة واحدة على دبوس إعادة التعيين لبدء وضع الاقتران؛ يومض LED مرة واحدة في الثانية.\n\nبعد الاقتران، اختبر الإنذار مرة واحدة لإكمال التضمين."
+          }
+        }
+      },
+      "images": {
+        "small": "/drivers/zb-module/assets/images/small.png",
+        "large": "/drivers/zb-module/assets/images/large.png",
+        "xlarge": "/drivers/zb-module/assets/images/xlarge.png"
+      },
+      "id": "zb-module"
+    },
+    {
+      "name": {
+        "en": "Heat Alarm (ZW-Module)",
+        "nl": "Warmtemelder (ZW-Module)",
+        "de": "Hitzemelder (ZW-Module)",
+        "fr": "Détecteur de chaleur (ZW-Module)",
+        "it": "Rilevatore calore (ZW-Module)",
+        "sv": "Värmevarnare (ZW-Module)",
+        "no": "Varmevarsel (ZW-Module)",
+        "es": "Detector de calor (ZW-Module)",
+        "da": "Varmealarm (ZW-Module)",
+        "ru": "Тепловой извещатель (ZW-Module)",
+        "pl": "Czujnik ciepła (ZW-Module)",
+        "ko": "열 감지기 (ZW-Module)",
+        "ar": "جهاز كشف الحرارة (ZW-Module)"
+      },
+      "class": "sensor",
+      "capabilities": [
+        "alarm_heat",
+        "alarm_test",
+        "alarm_tamper",
+        "alarm_problem",
+        "alarm_maintanance_dust",
+        "alarm_maintanance_inspection",
+        "alarm_eol",
+        "measure_battery"
+      ],
+      "capabilitiesOptions": {
+        "alarm_problem": {
+          "title": {
+            "en": "Hardware Fault",
+            "nl": "Hardwarefout",
+            "de": "Hardwarefehler",
+            "fr": "Défaut matériel",
+            "it": "Guasto hardware",
+            "sv": "Hårdvarufel",
+            "no": "Maskinvarefeil",
+            "es": "Avería de hardware",
+            "da": "Hardwarefejl",
+            "ru": "Аппаратная неисправность",
+            "pl": "Usterka sprzętu",
+            "ko": "하드웨어 결함",
+            "ar": "عطل في الأجهزة"
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      },
+      "images": {
+        "small": "/drivers/zw-module-heat/assets/images/small.png",
+        "large": "/drivers/zw-module-heat/assets/images/large.png",
+        "xlarge": "/drivers/zw-module-heat/assets/images/xlarge.png"
+      },
+      "zwave": {
+        "manufacturerId": 623,
+        "productTypeId": [
+          2
+        ],
+        "productId": [
+          2
+        ],
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/wp-content/uploads/products/51266/50253%20combined%20manuals.pdf",
+        "associationGroups": [
+          1
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
+            "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
+            "de": "Drücken Sie dreimal auf den Reset-Stift auf der Rückseite des ZW-Moduls. Danach sollte die LED blinken.",
+            "fr": "Appuyez trois fois sur la broche de réinitialisation au dos du module ZW. Ensuite, la LED doit clignoter.",
+            "it": "Premere tre volte il pin di reset sul retro del modulo ZW. Dopo di ciò, il LED dovrebbe lampeggiare.",
+            "sv": "Tryck tre gånger på resetstiftet på baksidan av ZW-modulen. Därefter ska LED-lampan blinka.",
+            "no": "Trykk tre ganger på tilbakestiftet på baksiden av ZW-modulen. Etter det skal LED-en begynne å blinke.",
+            "es": "Pulse tres veces el pin de reinicio en la parte posterior del módulo ZW. Después, el LED debería parpadear.",
+            "da": "Tryk tre gange på nulstillingsstiften på bagsiden af ZW-modulet. Derefter skal LED'en begynde at blinke.",
+            "ru": "Трижды нажмите на контакт сброса на задней стороне модуля ZW. После этого индикатор должен начать мигать.",
+            "pl": "Trzy razy naciśnij pin resetu z tyłu modułu ZW. Po tym dioda LED powinna zacząć migać.",
+            "ko": "ZW 모듈 뒷면의 리셋 핀을 세 번 누릅니다. 그 후 LED가 깜박이기 시작해야 합니다.",
+            "ar": "اضغط على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZW ثلاث مرات. بعد ذلك يجب أن يبدأ المصباح LED بالوميض."
+          }
+        },
+        "unlearnmode": {
+          "instruction": {
+            "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
+            "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
+            "de": "Drücken Sie dreimal auf den Reset-Stift auf der Rückseite des ZW-Moduls. Danach sollte die LED blinken.",
+            "fr": "Appuyez trois fois sur la broche de réinitialisation au dos du module ZW. Ensuite, la LED doit clignoter.",
+            "it": "Premere tre volte il pin di reset sul retro del modulo ZW. Dopo di ciò, il LED dovrebbe lampeggiare.",
+            "sv": "Tryck tre gånger på resetstiftet på baksidan av ZW-modulen. Därefter ska LED-lampan blinka.",
+            "no": "Trykk tre ganger på tilbakestiftet på baksiden av ZW-modulen. Etter det skal LED-en begynne å blinke.",
+            "es": "Pulse tres veces el pin de reinicio en la parte posterior del módulo ZW. Después, el LED debería parpadear.",
+            "da": "Tryk tre gange på nulstillingsstiften på bagsiden af ZW-modulet. Derefter skal LED'en begynde at blinke.",
+            "ru": "Трижды нажмите на контакт сброса на задней стороне модуля ZW. После этого индикатор должен начать мигать.",
+            "pl": "Trzy razy naciśnij pin resetu z tyłu modułu ZW. Po tym dioda LED powinna zacząć migać.",
+            "ko": "ZW 모듈 뒷면의 리셋 핀을 세 번 누릅니다. 그 후 LED가 깜박이기 시작해야 합니다.",
+            "ar": "اضغط على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZW ثلاث مرات. بعد ذلك يجب أن يبدأ المصباح LED بالوميض."
+          }
+        }
+      },
+      "id": "zw-module-heat",
+      "settings": []
+    },
+    {
+      "name": {
+        "en": "Smoke Alarm (ZW-Module)",
+        "nl": "Rookmelder (ZW-Module)",
+        "de": "Rauchmelder (ZW-Module)",
+        "fr": "Détecteur de fumée (ZW-Module)",
+        "it": "Rilevatore fumo (ZW-Module)",
+        "sv": "Rökvarnare (ZW-Module)",
+        "no": "Røykvarsel (ZW-Module)",
+        "es": "Detector de humo (ZW-Module)",
+        "da": "Røgalarm (ZW-Module)",
+        "ru": "Дымовой извещатель (ZW-Module)",
+        "pl": "Czujnik dymu (ZW-Module)",
+        "ko": "연기 감지기 (ZW-Module)",
+        "ar": "جهاز كشف الدخان (ZW-Module)"
+      },
+      "class": "smokealarm",
+      "capabilities": [
+        "alarm_smoke",
+        "alarm_test",
+        "alarm_tamper",
+        "alarm_problem",
+        "alarm_maintanance_dust",
+        "alarm_maintanance_inspection",
+        "alarm_eol",
+        "measure_battery"
+      ],
+      "capabilitiesOptions": {
+        "alarm_problem": {
+          "title": {
+            "en": "Hardware Fault",
+            "nl": "Hardwarefout",
+            "de": "Hardwarefehler",
+            "fr": "Défaut matériel",
+            "it": "Guasto hardware",
+            "sv": "Hårdvarufel",
+            "no": "Maskinvarefeil",
+            "es": "Avería de hardware",
+            "da": "Hardwarefejl",
+            "ru": "Аппаратная неисправность",
+            "pl": "Usterka sprzętu",
+            "ko": "하드웨어 결함",
+            "ar": "عطل في الأجهزة"
+          }
+        }
+      },
+      "platforms": [
+        "local",
+        "cloud"
+      ],
+      "connectivity": [
+        "zwave"
+      ],
+      "energy": {
+        "batteries": [
+          "CR2"
+        ]
+      },
+      "images": {
+        "small": "/drivers/zw-module-smoke/assets/images/small.png",
+        "large": "/drivers/zw-module-smoke/assets/images/large.png",
+        "xlarge": "/drivers/zw-module-smoke/assets/images/xlarge.png"
+      },
+      "zwave": {
+        "manufacturerId": 623,
+        "productTypeId": [
+          1
+        ],
+        "productId": [
+          1
+        ],
+        "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/wp-content/uploads/products/51266/50253%20combined%20manuals.pdf",
+        "associationGroups": [
+          1
+        ],
+        "learnmode": {
+          "instruction": {
+            "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
+            "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
+            "de": "Drücken Sie dreimal auf den Reset-Stift auf der Rückseite des ZW-Moduls. Danach sollte die LED blinken.",
+            "fr": "Appuyez trois fois sur la broche de réinitialisation au dos du module ZW. Ensuite, la LED doit clignoter.",
+            "it": "Premere tre volte il pin di reset sul retro del modulo ZW. Dopo di ciò, il LED dovrebbe lampeggiare.",
+            "sv": "Tryck tre gånger på resetstiftet på baksidan av ZW-modulen. Därefter ska LED-lampan blinka.",
+            "no": "Trykk tre ganger på tilbakestiftet på baksiden av ZW-modulen. Etter det skal LED-en begynne å blinke.",
+            "es": "Pulse tres veces el pin de reinicio en la parte posterior del módulo ZW. Después, el LED debería parpadear.",
+            "da": "Tryk tre gange på nulstillingsstiften på bagsiden af ZW-modulet. Derefter skal LED'en begynde at blinke.",
+            "ru": "Трижды нажмите на контакт сброса на задней стороне модуля ZW. После этого индикатор должен начать мигать.",
+            "pl": "Trzy razy naciśnij pin resetu z tyłu modułu ZW. Po tym dioda LED powinna zacząć migać.",
+            "ko": "ZW 모듈 뒷면의 리셋 핀을 세 번 누릅니다. 그 후 LED가 깜박이기 시작해야 합니다.",
+            "ar": "اضغط على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZW ثلاث مرات. بعد ذلك يجب أن يبدأ المصباح LED بالوميض."
+          }
+        },
+        "unlearnmode": {
+          "instruction": {
+            "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
+            "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
+            "de": "Drücken Sie dreimal auf den Reset-Stift auf der Rückseite des ZW-Moduls. Danach sollte die LED blinken.",
+            "fr": "Appuyez trois fois sur la broche de réinitialisation au dos du module ZW. Ensuite, la LED doit clignoter.",
+            "it": "Premere tre volte il pin di reset sul retro del modulo ZW. Dopo di ciò, il LED dovrebbe lampeggiare.",
+            "sv": "Tryck tre gånger på resetstiftet på baksidan av ZW-modulen. Därefter ska LED-lampan blinka.",
+            "no": "Trykk tre ganger på tilbakestiftet på baksiden av ZW-modulen. Etter det skal LED-en begynne å blinke.",
+            "es": "Pulse tres veces el pin de reinicio en la parte posterior del módulo ZW. Después, el LED debería parpadear.",
+            "da": "Tryk tre gange på nulstillingsstiften på bagsiden af ZW-modulet. Derefter skal LED'en begynde at blinke.",
+            "ru": "Трижды нажмите на контакт сброса на задней стороне модуля ZW. После этого индикатор должен начать мигать.",
+            "pl": "Trzy razy naciśnij pin resetu z tyłu modułu ZW. Po tym dioda LED powinna zacząć migać.",
+            "ko": "ZW 모듈 뒷면의 리셋 핀을 세 번 누릅니다. 그 후 LED가 깜박이기 시작해야 합니다.",
+            "ar": "اضغط على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZW ثلاث مرات. بعد ذلك يجب أن يبدأ المصباح LED بالوميض."
+          }
+        }
+      },
+      "id": "zw-module-smoke",
+      "settings": []
+    }
+  ],
+  "capabilities": {
+    "alarm_eol": {
+      "type": "boolean",
+      "icon": "/assets/capabilities/alarm_eol.svg",
+      "title": {
+        "en": "Replace Device",
+        "nl": "Apparaat vervangen",
+        "de": "Gerät austauschen",
+        "fr": "Remplacer l'appareil",
+        "it": "Sostituisci dispositivo",
+        "sv": "Byt enhet",
+        "no": "Bytt enhet",
+        "es": "Sustituir dispositivo",
+        "da": "Udskift enhed",
+        "ru": "Заменить устройство",
+        "pl": "Wymień urządzenie",
+        "ko": "기기 교체",
+        "ar": "استبدال الجهاز"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
+    "alarm_maintanance_dust": {
+      "type": "boolean",
+      "icon": "/assets/capabilities/alarm_maintanance_dust.svg",
+      "title": {
+        "en": "Cleaning Required",
+        "nl": "Schoonmaken vereist",
+        "de": "Reinigung erforderlich",
+        "fr": "Nettoyage requis",
+        "it": "Pulizia richiesta",
+        "sv": "Rengöring krävs",
+        "no": "Rengjøring påkrevd",
+        "es": "Limpieza necesaria",
+        "da": "Rengøring påkrævet",
+        "ru": "Требуется очистка",
+        "pl": "Wymagane czyszczenie",
+        "ko": "청소 필요",
+        "ar": "التنظيف مطلوب"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
+    "alarm_maintanance_inspection": {
+      "type": "boolean",
+      "icon": "/assets/capabilities/alarm_maintanance_inspection.svg",
+      "title": {
+        "en": "Inspection Required",
+        "nl": "Inspectie vereist",
+        "de": "Inspektion erforderlich",
+        "fr": "Inspection requise",
+        "it": "Ispezione richiesta",
+        "sv": "Inspektion krävs",
+        "no": "Inspeksjon påkrevd",
+        "es": "Inspección necesaria",
+        "da": "Inspektion påkrævet",
+        "ru": "Требуется осмотр",
+        "pl": "Wymagana inspekcja",
+        "ko": "점검 필요",
+        "ar": "الفحص مطلوب"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    },
+    "alarm_test": {
+      "type": "boolean",
+      "icon": "/assets/capabilities/alarm_test.svg",
+      "title": {
+        "en": "Alarm Self-test",
+        "nl": "Alarm zelftest",
+        "de": "Alarm-Selbsttest",
+        "fr": "Autotest d'alarme",
+        "it": "Autotest allarme",
+        "sv": "Larmsjälvtest",
+        "no": "Alarmselvtest",
+        "es": "Autoprueba de alarma",
+        "da": "Alarm-selvtest",
+        "ru": "Самодиагностика сигнализации",
+        "pl": "Autotest alarmu",
+        "ko": "경보 자가 진단",
+        "ar": "الاختبار الذاتي للإنذار"
+      },
+      "getable": true,
+      "setable": false,
+      "uiComponent": "sensor"
+    }
+  }
+}

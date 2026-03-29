@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "!{{The device should be replaced|The device should not be replaced}}",
+    "nl": "!{{Het apparaat moet worden vervangen|Het apparaat hoeft niet te worden vervangen}}",
+    "de": "!{{Das Gerät sollte ersetzt werden|Das Gerät sollte nicht ersetzt werden}}",
+    "fr": "!{{L'appareil doit être remplacé|L'appareil ne doit pas être remplacé}}",
+    "it": "!{{Il dispositivo deve essere sostituito|Il dispositivo non deve essere sostituito}}",
+    "sv": "!{{Enheten ska bytas|Enheten ska inte bytas}}",
+    "no": "!{{Enheten skal byttes|Enheten skal ikke byttes}}",
+    "es": "!{{El dispositivo debe sustituirse|El dispositivo no debe sustituirse}}",
+    "da": "!{{Enheden skal udskiftes|Enheden skal ikke udskiftes}}",
+    "ru": "!{{Устройство следует заменить|Устройство не следует заменять}}",
+    "pl": "!{{Urządzenie należy wymienić|Urządzenia nie należy wymieniać}}",
+    "ko": "!{{기기를 교체해야 합니다|기기를 교체할 필요가 없습니다}}",
+    "ar": "!{{يجب استبدال الجهاز|لا يجب استبدال الجهاز}}"
+  },
+  "hint": {
+    "en": "Checks whether the device reports that it has reached end of life and should be replaced.",
+    "nl": "Controleert of het apparaat meldt dat het het einde van de levensduur heeft bereikt en vervangen moet worden.",
+    "de": "Prüft, ob das Gerät meldet, dass es das Lebensende erreicht hat und ersetzt werden sollte.",
+    "fr": "Vérifie si l'appareil signale qu'il a atteint sa fin de vie et doit être remplacé.",
+    "it": "Verifica se il dispositivo segnala di aver raggiunto la fine utile e deve essere sostituito.",
+    "sv": "Kontrollerar om enheten rapporterar att den nått livets slut och ska bytas.",
+    "no": "Sjekker om enheten rapporterer at den har nådd levetidens slutt og skal byttes.",
+    "es": "Comprueba si el dispositivo informa de que ha alcanzado el fin de su vida útil y debe sustituirse.",
+    "da": "Tjekker om enheden rapporterer, at den har nået enden af levetiden og skal udskiftes.",
+    "ru": "Проверяет, сообщает ли устройство о достижении конца срока службы и необходимости замены.",
+    "pl": "Sprawdza, czy urządzenie zgłasza koniec żywotności i konieczność wymiany.",
+    "ko": "기기가 수명 종료에 도달해 교체해야 한다고 보고하는지 확인합니다.",
+    "ar": "يتحقق مما إذا كان الجهاز يبلغ أنه بلغ نهاية عمره الافتراضي ويجب استبداله."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

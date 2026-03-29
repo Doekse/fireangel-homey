@@ -1,0 +1,1 @@
+Stel je een woning voor waar bescherming rustig op de achtergrond blijft, aanwezig maar nooit schreeuwerig. Al decennia werkt FireAngel vanuit het Verenigd Koninkrijk samen met brandveiligheidsprofessionals en gezinnen om betrouwbare rook-, warmte- en koolmonoxidedetectie te leveren. Via Homey bereikt diezelfde waakzaamheid je Flows en meldingen op één bekende plek.

@@ -1,0 +1,95 @@
+{
+  "name": {
+    "en": "Smoke / Heat Alarm (ZB-Module)",
+    "nl": "Rookmelder / warmtemelder (ZB-Module)",
+    "de": "Rauchmelder / Hitzemelder (ZB-Module)",
+    "fr": "Détecteur de fumée / de chaleur (ZB-Module)",
+    "it": "Rilevatore fumo / calore (ZB-Module)",
+    "sv": "Rökvarnare / värmevarnare (ZB-Module)",
+    "no": "Røykvarsel / varmevarsel (ZB-Module)",
+    "es": "Detector de humo / calor (ZB-Module)",
+    "da": "Røgalarm / varmealarm (ZB-Module)",
+    "ru": "Дымовой / тепловой извещатель (ZB-Module)",
+    "pl": "Czujnik dymu / ciepła (ZB-Module)",
+    "ko": "연기 / 열 감지기 (ZB-Module)",
+    "ar": "جهاز كشف الدخان / الحرارة (ZB-Module)"
+  },
+  "class": "smokealarm",
+  "capabilities": [
+    "alarm_fire",
+    "alarm_test",
+    "alarm_tamper",
+    "alarm_problem",
+    "alarm_battery"
+  ],
+  "capabilitiesOptions": {
+    "alarm_problem": {
+      "title": {
+        "en": "Hardware Fault",
+        "nl": "Hardwarefout",
+        "de": "Hardwarefehler",
+        "fr": "Défaut matériel",
+        "it": "Guasto hardware",
+        "sv": "Hårdvarufel",
+        "no": "Maskinvarefeil",
+        "es": "Avería de hardware",
+        "da": "Hardwarefejl",
+        "ru": "Аппаратная неисправность",
+        "pl": "Usterka sprzętu",
+        "ko": "하드웨어 결함",
+        "ar": "عطل في الأجهزة"
+      }
+    }
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zigbee"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2"
+    ]
+  },
+  "zigbee": {
+    "manufacturerName": "Fireangel",
+    "productId": [
+      "Alarm_SD_Device"
+    ],
+    "endpoints": {
+      "1": {
+        "clusters": [
+          1,
+          1280
+        ],
+        "bindings": [
+          1280
+        ]
+      }
+    },
+    "learnmode": {
+      "instruction": {
+        "en": "First hold the reset pin on the back of the ZB-Module for more than five seconds, the LED should quickly flash 10 times.\n\nAfter that press the reset pin once to start pairing mode, the LED should flash once per second.\n\nAfter pairing please test the alarm once to fully include it.",
+        "nl": "Houd de reset-pin aan de achterkant van de ZB-module langer dan vijf seconden ingedrukt; de LED zou snel 10 keer moeten knipperen.\n\nDruk daarna één keer op de reset-pin om de koppelmodus te starten; de LED knippert één keer per seconde.\n\nTest na het koppelen de alarmmelder één keer om het apparaat volledig op te nemen.",
+        "de": "Halten Sie den Reset-Stift auf der Rückseite des ZB-Moduls länger als fünf Sekunden gedrückt; die LED sollte schnell 10-mal blinken.\n\nDrücken Sie anschließend einmal auf den Reset-Stift, um den Kopplungsmodus zu starten; die LED blinkt einmal pro Sekunde.\n\nTesten Sie nach der Kopplung den Alarm einmal, um das Gerät vollständig einzubinden.",
+        "fr": "Maintenez la broche de réinitialisation au dos du module ZB pendant plus de cinq secondes ; la LED doit clignoter rapidement 10 fois.\n\nEnsuite, appuyez une fois sur la broche de réinitialisation pour démarrer le mode jumelage ; la LED clignote une fois par seconde.\n\nAprès le jumelage, testez l'alarme une fois pour finaliser l'inclusion.",
+        "it": "Tenere premuto il pin di reset sul retro del modulo ZB per più di cinque secondi; il LED dovrebbe lampeggiare rapidamente 10 volte.\n\nPoi premere una volta il pin di reset per avviare la modalità di associazione; il LED lampeggia una volta al secondo.\n\nDopo l'associazione, testare l'allarme una volta per completare l'inclusione.",
+        "sv": "Håll resetstiftet på baksidan av ZB-modulen intryckt i mer än fem sekunder; LED-lampan ska blinka snabbt 10 gånger.\n\nTryck sedan en gång på resetstiftet för att starta parkopplingsläget; LED blinkar en gång per sekund.\n\nEfter parkoppling, testa larmet en gång för att fullt inkludera enheten.",
+        "no": "Hold tilbakestiftet på baksiden av ZB-modulen inne i mer enn fem sekunder; LED-en skal blinke raskt 10 ganger.\n\nTrykk deretter én gang på tilbakestiftet for å starte parkoblingsmodus; LED-en blinker én gang per sekund.\n\nEtter parkobling, test alarmen én gang for å fullføre inkluderingen.",
+        "es": "Mantenga pulsado el pin de reinicio en la parte posterior del módulo ZB durante más de cinco segundos; el LED debería parpadear rápidamente 10 veces.\n\nA continuación, pulse una vez el pin de reinicio para iniciar el modo de emparejamiento; el LED parpadea una vez por segundo.\n\nDespués del emparejamiento, pruebe la alarma una vez para completar la inclusión.",
+        "da": "Hold nulstillingsstiften på bagsiden af ZB-modulet inde i mere end fem sekunder; LED'en skal hurtigt blinke 10 gange.\n\nTryk derefter én gang på nulstillingsstiften for at starte parringstilstand; LED'en blinker én gang per sekund.\n\nEfter parring, test alarmen én gang for fuldt at inkludere enheden.",
+        "ru": "Удерживайте контакт сброса на задней стороне модуля ZB более пяти секунд; индикатор должен быстро мигнуть 10 раз.\n\nЗатем один раз нажмите на контакт сброса, чтобы войти в режим сопряжения; индикатор мигает раз в секунду.\n\nПосле сопряжения один раз протестируйте сигнализацию для полного включения устройства.",
+        "pl": "Przytrzymaj pin resetu z tyłu modułu ZB dłużej niż pięć sekund; dioda LED powinna szybko mignąć 10 razy.\n\nNastępnie naciśnij pin resetu raz, aby uruchomić tryb parowania; dioda miga raz na sekundę.\n\nPo sparowaniu przetestuj alarm raz, aby w pełni dodać urządzenie.",
+        "ko": "ZB 모듈 뒷면의 리셋 핀을 5초 이상 길게 누르세요. LED가 빠르게 10번 깜박여야 합니다.\n\n그 다음 페어링 모드를 시작하려면 리셋 핀을 한 번 누르세요. LED가 초당 한 번 깜박입니다.\n\n페어링 후 알람을 한 번 테스트하여 기기를 완전히 포함하세요.",
+        "ar": "اضغط مع الاستمرار على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZB لأكثر من خمس ثوانٍ؛ يجب أن يومض مصباح LED بسرعة 10 مرات.\n\nبعد ذلك اضغط مرة واحدة على دبوس إعادة التعيين لبدء وضع الاقتران؛ يومض LED مرة واحدة في الثانية.\n\nبعد الاقتران، اختبر الإنذار مرة واحدة لإكمال التضمين."
+      }
+    }
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  }
+}

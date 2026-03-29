@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "icon": "/assets/capabilities/alarm_maintanance_dust.svg",
+  "title": {
+    "en": "Cleaning Required",
+    "nl": "Schoonmaken vereist",
+    "de": "Reinigung erforderlich",
+    "fr": "Nettoyage requis",
+    "it": "Pulizia richiesta",
+    "sv": "Rengöring krävs",
+    "no": "Rengjøring påkrevd",
+    "es": "Limpieza necesaria",
+    "da": "Rengøring påkrævet",
+    "ru": "Требуется очистка",
+    "pl": "Wymagane czyszczenie",
+    "ko": "청소 필요",
+    "ar": "التنظيف مطلوب"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor"
+}

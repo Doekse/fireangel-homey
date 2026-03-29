@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "icon": "/assets/capabilities/alarm_eol.svg",
+  "title": {
+    "en": "Replace Device",
+    "nl": "Apparaat vervangen",
+    "de": "Gerät austauschen",
+    "fr": "Remplacer l'appareil",
+    "it": "Sostituisci dispositivo",
+    "sv": "Byt enhet",
+    "no": "Bytt enhet",
+    "es": "Sustituir dispositivo",
+    "da": "Udskift enhed",
+    "ru": "Заменить устройство",
+    "pl": "Wymień urządzenie",
+    "ko": "기기 교체",
+    "ar": "استبدال الجهاز"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor"
+}

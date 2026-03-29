@@ -1,0 +1,1 @@
+Se for deg et hjem der beskyttelsen hviler stille i bakgrunnen, til stede men aldri dramatisk. I tiår har FireAngel fra Storbritannia jobbet med brannfagfolk og familier for å levere pålitelig røyk-, varme- og karbonmonoksidvarsling. Via Homey når den samme årvåkenheten dine Flows og varsler på ett kjent sted.

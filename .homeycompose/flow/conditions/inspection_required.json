@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Inspection !{{is|is not}} required",
+    "nl": "Inspectie !{{is|is niet}} vereist",
+    "de": "Inspektion !{{ist|ist nicht}} erforderlich",
+    "fr": "Inspection !{{est|n'est pas}} requise",
+    "it": "Ispezione !{{è|non è}} richiesta",
+    "sv": "Inspektion !{{är|är inte}} nödvändig",
+    "no": "Inspeksjon !{{er|er ikke}} påkrevd",
+    "es": "Inspección !{{es|no es}} necesaria",
+    "da": "Inspektion !{{er|er ikke}} påkrævet",
+    "ru": "Осмотр !{{требуется|не требуется}}",
+    "pl": "Inspekcja !{{jest|nie jest}} wymagana",
+    "ko": "점검이 !{{필요합니다|필요하지 않습니다}}",
+    "ar": "الفحص !{{مطلوب|غير مطلوب}}"
+  },
+  "hint": {
+    "en": "Checks whether maintenance inspection is currently required for the device.",
+    "nl": "Controleert of er momenteel een onderhoudsinspectie nodig is voor het apparaat.",
+    "de": "Prüft, ob für das Gerät derzeit eine Wartungsinspektion erforderlich ist.",
+    "fr": "Vérifie si une inspection d'entretien est actuellement requise pour l'appareil.",
+    "it": "Verifica se è attualmente richiesta l'ispezione di manutenzione per il dispositivo.",
+    "sv": "Kontrollerar om underhållsinspektion för närvarande krävs för enheten.",
+    "no": "Sjekker om vedlikeholdsinspeksjon for øyeblikket er nødvendig for enheten.",
+    "es": "Comprueba si la inspección de mantenimiento es necesaria actualmente para el dispositivo.",
+    "da": "Tjekker om vedligeholdelsesinspektion i øjeblikket er påkrævet for enheden.",
+    "ru": "Проверяет, требуется ли сейчас техосмотр устройства.",
+    "pl": "Sprawdza, czy urządzenie wymaga obecnie przeglądu konserwacyjnego.",
+    "ko": "기기에 현재 유지보수 점검이 필요한지 확인합니다.",
+    "ar": "يتحقق مما إذا كان فحص الصيانة مطلوبًا حاليًا للجهاز."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

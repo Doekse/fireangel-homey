@@ -1,0 +1,1 @@
+Föreställ dig ett hem där skyddet vilar tyst i bakgrunden, närvarande men aldrig dramatiskt. I decennier har FireAngel från Storbritannien arbetat med brandskyddsexperter och familjer för att levera pålitlig rök-, värme- och kolmonoxidvarning. Via Homey når samma vaksamhet dina Flows och aviseringar på en välbekant plats.

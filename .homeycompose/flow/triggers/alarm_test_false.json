@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Alarm self-test ended",
+    "nl": "Zelftest alarm beëindigd",
+    "de": "Alarm-Selbsttest beendet",
+    "fr": "Autotest d'alarme terminé",
+    "it": "Autotest allarme terminato",
+    "sv": "Larmsjälvtest avslutat",
+    "no": "Alarmselvtest avsluttet",
+    "es": "Autoprueba de alarma finalizada",
+    "da": "Alarm-selvtest afsluttet",
+    "ru": "Самодиагностика сигнализации завершена",
+    "pl": "Autotest alarmu zakończony",
+    "ko": "경보 자가 진단 종료",
+    "ar": "انتهى الاختبار الذاتي للإنذار"
+  },
+  "hint": {
+    "en": "When the device reports that self-test is no longer active.",
+    "nl": "Wanneer het apparaat meldt dat de zelftest niet meer actief is.",
+    "de": "Wenn das Gerät meldet, dass der Selbsttest nicht mehr aktiv ist.",
+    "fr": "Lorsque l'appareil signale que l'autotest n'est plus actif.",
+    "it": "Quando il dispositivo segnala che l'autotest non è più attivo.",
+    "sv": "När enheten rapporterar att självtest inte längre är aktivt.",
+    "no": "Når enheten rapporterer at selvtest ikke lenger er aktiv.",
+    "es": "Cuando el dispositivo informa de que la autoprueba ya no está activa.",
+    "da": "Når enheden rapporterer, at selvtest ikke længere er aktiv.",
+    "ru": "Когда устройство сообщает, что самодиагностика неактивна.",
+    "pl": "Gdy urządzenie zgłasza, że autotest nie jest już aktywny.",
+    "ko": "기기가 자가 진단이 더 이상 활성화되지 않았다고 보고할 때.",
+    "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي لم يعد نشطًا."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zb-module|zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

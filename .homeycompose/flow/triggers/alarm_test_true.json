@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Alarm self-test started",
+    "nl": "Zelftest alarm gestart",
+    "de": "Alarm-Selbsttest gestartet",
+    "fr": "Autotest d'alarme démarré",
+    "it": "Autotest allarme avviato",
+    "sv": "Larmsjälvtest startat",
+    "no": "Alarmselvtest startet",
+    "es": "Autoprueba de alarma iniciada",
+    "da": "Alarm-selvtest startet",
+    "ru": "Запущена самодиагностика сигнализации",
+    "pl": "Rozpoczęto autotest alarmu",
+    "ko": "경보 자가 진단 시작",
+    "ar": "بدأ الاختبار الذاتي للإنذار"
+  },
+  "hint": {
+    "en": "When the device reports that a self-test is active.",
+    "nl": "Wanneer het apparaat meldt dat een zelftest actief is.",
+    "de": "Wenn das Gerät meldet, dass ein Selbsttest aktiv ist.",
+    "fr": "Lorsque l'appareil signale qu'un autotest est actif.",
+    "it": "Quando il dispositivo segnala che un autotest è attivo.",
+    "sv": "När enheten rapporterar att ett självtest är aktivt.",
+    "no": "Når enheten rapporterer at en selvtest er aktiv.",
+    "es": "Cuando el dispositivo informa de que hay una autoprueba activa.",
+    "da": "Når enheden rapporterer, at en selvtest er aktiv.",
+    "ru": "Когда устройство сообщает, что активна самодиагностика.",
+    "pl": "Gdy urządzenie zgłasza aktywny autotest.",
+    "ko": "기기가 자가 진단이 활성화되었다고 보고할 때.",
+    "ar": "عندما يبلغ الجهاز أن الاختبار الذاتي نشط."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zb-module|zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

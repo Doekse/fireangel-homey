@@ -1,0 +1,111 @@
+{
+  "name": {
+    "en": "Heat Alarm (ZW-Module)",
+    "nl": "Warmtemelder (ZW-Module)",
+    "de": "Hitzemelder (ZW-Module)",
+    "fr": "Détecteur de chaleur (ZW-Module)",
+    "it": "Rilevatore calore (ZW-Module)",
+    "sv": "Värmevarnare (ZW-Module)",
+    "no": "Varmevarsel (ZW-Module)",
+    "es": "Detector de calor (ZW-Module)",
+    "da": "Varmealarm (ZW-Module)",
+    "ru": "Тепловой извещатель (ZW-Module)",
+    "pl": "Czujnik ciepła (ZW-Module)",
+    "ko": "열 감지기 (ZW-Module)",
+    "ar": "جهاز كشف الحرارة (ZW-Module)"
+  },
+  "class": "sensor",
+  "capabilities": [
+    "alarm_heat",
+    "alarm_test",
+    "alarm_tamper",
+    "alarm_problem",
+    "alarm_maintanance_dust",
+    "alarm_maintanance_inspection",
+    "alarm_eol",
+    "measure_battery"
+  ],
+  "capabilitiesOptions": {
+    "alarm_problem": {
+      "title": {
+        "en": "Hardware Fault",
+        "nl": "Hardwarefout",
+        "de": "Hardwarefehler",
+        "fr": "Défaut matériel",
+        "it": "Guasto hardware",
+        "sv": "Hårdvarufel",
+        "no": "Maskinvarefeil",
+        "es": "Avería de hardware",
+        "da": "Hardwarefejl",
+        "ru": "Аппаратная неисправность",
+        "pl": "Usterka sprzętu",
+        "ko": "하드웨어 결함",
+        "ar": "عطل في الأجهزة"
+      }
+    }
+  },
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "connectivity": [
+    "zwave"
+  ],
+  "energy": {
+    "batteries": [
+      "CR2"
+    ]
+  },
+  "images": {
+    "small": "{{driverAssetsPath}}/images/small.png",
+    "large": "{{driverAssetsPath}}/images/large.png",
+    "xlarge": "{{driverAssetsPath}}/images/xlarge.png"
+  },
+  "zwave": {
+    "manufacturerId": 623,
+    "productTypeId": [
+      2
+    ],
+    "productId": [
+      2
+    ],
+    "zwaveAllianceProductDocumentation": "https://products.z-wavealliance.org/wp-content/uploads/products/51266/50253%20combined%20manuals.pdf",
+    "associationGroups": [
+      1
+    ],
+    "learnmode": {
+      "instruction": {
+        "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
+        "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
+        "de": "Drücken Sie dreimal auf den Reset-Stift auf der Rückseite des ZW-Moduls. Danach sollte die LED blinken.",
+        "fr": "Appuyez trois fois sur la broche de réinitialisation au dos du module ZW. Ensuite, la LED doit clignoter.",
+        "it": "Premere tre volte il pin di reset sul retro del modulo ZW. Dopo di ciò, il LED dovrebbe lampeggiare.",
+        "sv": "Tryck tre gånger på resetstiftet på baksidan av ZW-modulen. Därefter ska LED-lampan blinka.",
+        "no": "Trykk tre ganger på tilbakestiftet på baksiden av ZW-modulen. Etter det skal LED-en begynne å blinke.",
+        "es": "Pulse tres veces el pin de reinicio en la parte posterior del módulo ZW. Después, el LED debería parpadear.",
+        "da": "Tryk tre gange på nulstillingsstiften på bagsiden af ZW-modulet. Derefter skal LED'en begynde at blinke.",
+        "ru": "Трижды нажмите на контакт сброса на задней стороне модуля ZW. После этого индикатор должен начать мигать.",
+        "pl": "Trzy razy naciśnij pin resetu z tyłu modułu ZW. Po tym dioda LED powinna zacząć migać.",
+        "ko": "ZW 모듈 뒷면의 리셋 핀을 세 번 누릅니다. 그 후 LED가 깜박이기 시작해야 합니다.",
+        "ar": "اضغط على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZW ثلاث مرات. بعد ذلك يجب أن يبدأ المصباح LED بالوميض."
+      }
+    },
+    "unlearnmode": {
+      "instruction": {
+        "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
+        "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
+        "de": "Drücken Sie dreimal auf den Reset-Stift auf der Rückseite des ZW-Moduls. Danach sollte die LED blinken.",
+        "fr": "Appuyez trois fois sur la broche de réinitialisation au dos du module ZW. Ensuite, la LED doit clignoter.",
+        "it": "Premere tre volte il pin di reset sul retro del modulo ZW. Dopo di ciò, il LED dovrebbe lampeggiare.",
+        "sv": "Tryck tre gånger på resetstiftet på baksidan av ZW-modulen. Därefter ska LED-lampan blinka.",
+        "no": "Trykk tre ganger på tilbakestiftet på baksiden av ZW-modulen. Etter det skal LED-en begynne å blinke.",
+        "es": "Pulse tres veces el pin de reinicio en la parte posterior del módulo ZW. Después, el LED debería parpadear.",
+        "da": "Tryk tre gange på nulstillingsstiften på bagsiden af ZW-modulet. Derefter skal LED'en begynde at blinke.",
+        "ru": "Трижды нажмите на контакт сброса на задней стороне модуля ZW. После этого индикатор должен начать мигать.",
+        "pl": "Trzy razy naciśnij pin resetu z tyłu modułu ZW. Po tym dioda LED powinna zacząć migać.",
+        "ko": "ZW 모듈 뒷면의 리셋 핀을 세 번 누릅니다. 그 후 LED가 깜박이기 시작해야 합니다.",
+        "ar": "اضغط على دبوس إعادة التعيين في الجزء الخلفي من وحدة ZW ثلاث مرات. بعد ذلك يجب أن يبدأ المصباح LED بالوميض."
+      }
+    }
+  }
+}

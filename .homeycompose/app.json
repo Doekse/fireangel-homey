@@ -1,0 +1,66 @@
+{
+  "id": "uk.co.fireangel",
+  "version": "0.0.1",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "brandColor": "#f16e20",
+  "runtime": "nodejs",
+  "platforms": [
+    "local",
+    "cloud"
+  ],
+  "name": {
+    "en": "FireAngel",
+    "nl": "FireAngel",
+    "de": "FireAngel",
+    "fr": "FireAngel",
+    "it": "FireAngel",
+    "sv": "FireAngel",
+    "no": "FireAngel",
+    "es": "FireAngel",
+    "da": "FireAngel",
+    "ru": "FireAngel",
+    "pl": "FireAngel",
+    "ko": "FireAngel",
+    "ar": "FireAngel"
+  },
+  "description": {
+    "en": "Smart solutions for safer homes.",
+    "nl": "Slimme oplossingen voor veiligere woningen.",
+    "de": "Intelligente Lösungen für sicherere Zuhause.",
+    "fr": "Des solutions intelligentes pour des foyers plus sûrs.",
+    "it": "Soluzioni intelligenti per case più sicure.",
+    "sv": "Smarta lösningar för säkrare hem.",
+    "no": "Smarte løsninger for tryggere hjem.",
+    "es": "Soluciones inteligentes para hogares más seguros.",
+    "da": "Smarte løsninger til mere sikre hjem.",
+    "ru": "Умные решения для более безопасного дома.",
+    "pl": "Inteligentne rozwiązania dla bezpieczniejszych domów.",
+    "ko": "더 안전한 집을 위한 스마트 솔루션.",
+    "ar": "حلول ذكية لمنازل أكثر أمانًا."
+  },
+  "category": [
+    "security"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Abe Haverkamp",
+    "email": "abe.haverkamp@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/Doekse/fireangel-homey/issues"
+  },
+  "contributors": {
+    "developers": [
+      {
+        "name": "Bas van der Ploeg (icons)"
+      }
+    ]
+  },
+  "source": "https://github.com/Doekse/fireangel-homey"
+}

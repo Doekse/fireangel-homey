@@ -1,0 +1,54 @@
+{
+  "title": {
+    "en": "Cleaning is required",
+    "nl": "Schoonmaken is vereist",
+    "de": "Reinigung ist erforderlich",
+    "fr": "Le nettoyage est requis",
+    "it": "La pulizia è richiesta",
+    "sv": "Rengöring krävs",
+    "no": "Rengjøring er nødvendig",
+    "es": "Es necesaria la limpieza",
+    "da": "Rengøring er påkrævet",
+    "ru": "Требуется очистка",
+    "pl": "Wymagane jest czyszczenie",
+    "ko": "청소가 필요함",
+    "ar": "التنظيف مطلوب"
+  },
+  "hint": {
+    "en": "When the device reports that cleaning is needed.",
+    "nl": "Wanneer het apparaat meldt dat schoonmaken nodig is.",
+    "de": "Wenn das Gerät meldet, dass eine Reinigung erforderlich ist.",
+    "fr": "Lorsque l'appareil signale qu'un nettoyage est nécessaire.",
+    "it": "Quando il dispositivo segnala che è necessaria la pulizia.",
+    "sv": "När enheten rapporterar att rengöring behövs.",
+    "no": "Når enheten rapporterer at rengjøring er nødvendig.",
+    "es": "Cuando el dispositivo informa de que es necesaria la limpieza.",
+    "da": "Når enheden rapporterer, at rengøring er nødvendig.",
+    "ru": "Когда устройство сообщает о необходимости очистки.",
+    "pl": "Gdy urządzenie zgłasza potrzebę czyszczenia.",
+    "ko": "기기가 청소가 필요하다고 보고할 때.",
+    "ar": "عندما يبلغ الجهاز أن التنظيف مطلوب."
+  },
+  "args": [
+    {
+      "type": "device",
+      "name": "device",
+      "title": {
+        "en": "Device",
+        "nl": "Apparaat",
+        "de": "Gerät",
+        "fr": "Appareil",
+        "it": "Dispositivo",
+        "sv": "Enhet",
+        "no": "Enhet",
+        "es": "Dispositivo",
+        "da": "Enhed",
+        "ru": "Устройство",
+        "pl": "Urządzenie",
+        "ko": "기기",
+        "ar": "الجهاز"
+      },
+      "filter": "driver_id=zw-module-heat|zw-module-smoke"
+    }
+  ]
+}

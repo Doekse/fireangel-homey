@@ -1,0 +1,22 @@
+{
+  "type": "boolean",
+  "icon": "/assets/capabilities/alarm_test.svg",
+  "title": {
+    "en": "Alarm Self-test",
+    "nl": "Alarm zelftest",
+    "de": "Alarm-Selbsttest",
+    "fr": "Autotest d'alarme",
+    "it": "Autotest allarme",
+    "sv": "Larmsjälvtest",
+    "no": "Alarmselvtest",
+    "es": "Autoprueba de alarma",
+    "da": "Alarm-selvtest",
+    "ru": "Самодиагностика сигнализации",
+    "pl": "Autotest alarmu",
+    "ko": "경보 자가 진단",
+    "ar": "الاختبار الذاتي للإنذار"
+  },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor"
+}
