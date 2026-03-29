@@ -4,5 +4,8 @@
   },
   "0.0.2": {
     "en": "Added forum topic ID"
+  },
+  "0.0.3": {
+    "en": "Added pairing animations"
   }
 }

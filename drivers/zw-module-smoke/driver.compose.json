@@ -73,6 +73,7 @@
       1
     ],
     "learnmode": {
+      "image": "/assets/pairing/zwave.svg",
       "instruction": {
         "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
         "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
@@ -90,6 +91,7 @@
       }
     },
     "unlearnmode": {
+      "image": "/assets/pairing/zwave.svg",
       "instruction": {
         "en": "Press the reset pin on the back of the ZW-Module three times. After that, the LED should start blinking.",
         "nl": "Druk drie keer op de reset-pin aan de achterkant van de ZW-module. Daarna begint de LED te knipperen.",
