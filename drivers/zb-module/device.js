@@ -6,9 +6,9 @@ const ZigbeeDevice = require('../../lib/ZigbeeDevice');
 const ALARM_TEST_HOLD_MS = 8000;
 
 /**
- * FireAngel ZB module: IAS Zone enrollment and zone status → fire (alarm1/alarm2), tamper, test,
- * hardware problem, and low-battery alarm (`battery` map bit). Uses `alarm_fire` so smoke- and heat-
- * head combinations share one capability.
+ * FireAngel ZB module: maps IAS Zone status bits (after stack enrollment) to `alarm_fire`, tamper, test,
+ * hardware problem, and low-battery (`battery` map bit). Uses `alarm_fire` so smoke- and heat-head
+ * combinations share one capability.
  */
 class ZbModule extends ZigbeeDevice {
   /**
@@ -20,9 +20,7 @@ class ZbModule extends ZigbeeDevice {
     await super.onNodeInit(payload);
     const { zclNode } = payload;
 
-    // Proactive `zoneEnrollResponse` on every init: Homey may miss the enroll handshake after restart,
-    // and `isFirstInit()` is false then so Elko-style gating would skip it.
-    await this.initIasZoneDevice(
+    await this.registerZoneStatusListener(
       zclNode,
       ['alarm_fire', 'alarm_tamper', 'alarm_test', 'alarm_problem', 'alarm_battery'],
       [
@@ -41,8 +39,6 @@ class ZbModule extends ZigbeeDevice {
         },
         'battery',
       ],
-      undefined,
-      true,
     );
   }
 

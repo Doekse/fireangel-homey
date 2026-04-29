@@ -11,7 +11,7 @@ class FireAngelApp extends Homey.App {
   }
 
   /**
-   * Registers app-level Flow condition cards (see `app.json` / `.homeycompose/flow/conditions`).
+   * Keeps Flow condition registration in one place so capability-based checks stay consistent across cards.
    */
   _registerFlowCards() {
     this.homey.flow
@@ -28,6 +28,8 @@ class FireAngelApp extends Homey.App {
   }
 
   /**
+   * Reuses one listener for multiple condition cards so card definitions only differ by capability id.
+   *
    * @param {string} capabilityId
    * @param {{ device: Homey.Device }} args
    * @param {object} state
